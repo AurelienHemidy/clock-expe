@@ -73,8 +73,8 @@ class Clock {
       seconds.classList.add(`seconds-tick`);
       document.querySelector('.clock').appendChild(seconds);
 
-      let x = radius * Math.cos((Math.PI / 6) * i) + center.x;
-      let y = radius * Math.sin((Math.PI / 6) * i) + center.y;
+      let x = radius * Math.cos((Math.PI / 30) * i) + center.x;
+      let y = radius * Math.sin((Math.PI / 30) * i) + center.y;
       seconds.style.left = `${x}px`;
       seconds.style.top = `${y}px`;
       seconds.style.transform = 'translate(-50%, -50%)';
