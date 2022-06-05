@@ -7,16 +7,6 @@ const parameters = {
 };
 
 const gui = new GUI();
-gui
-  .add(parameters, "minutes")
-  .min(0)
-  .max(360)
-  .onChange((value) => {
-    console.log(value);
-    document.querySelector(
-      ".seconds-needle"
-    ).style.transform = `translate(0, calc(-100% + 5px)) rotate(${value}deg)`;
-  });
 
 const radiansToDegree = (radians) => {
   let pi = Math.PI;
