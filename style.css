@@ -8,6 +8,7 @@ html {
 
 body {
   background-color: black;
+  font-family: "Barlow", sans-serif;
 }
 
 .clock {
@@ -85,7 +86,7 @@ body {
 }
 
 .hour-number {
-  font-size: 25px;
+  font-size: 40px;
   color: black;
   position: absolute;
 }

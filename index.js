@@ -25,7 +25,7 @@ class Clock {
 
   setHoursOnClock() {
     const hours = 12;
-    const radius = 280 / 2;
+    const radius = 260 / 2;
     const center = {
       x: 350 / 2,
       y: 350 / 2,
@@ -50,9 +50,9 @@ class Clock {
       document.querySelector(".clock").appendChild(pointHour);
 
       let xPoint =
-        (radius + 20) * Math.cos((Math.PI / 6) * i - Math.PI / 2) + center.x;
+        (radius + 30) * Math.cos((Math.PI / 6) * i - Math.PI / 2) + center.x;
       let yPoint =
-        (radius + 20) * Math.sin((Math.PI / 6) * i - Math.PI / 2) + center.y;
+        (radius + 30) * Math.sin((Math.PI / 6) * i - Math.PI / 2) + center.y;
       pointHour.style.left = `${xPoint}px`;
       pointHour.style.top = `${yPoint}px`;
       pointHour.style.transform = "translate(-50%, -50%)";
